@@ -1,0 +1,135 @@
+{% include "Header.html" %}
+
+<div class="HOME-IMAGES">
+    <div class="title-div">
+        <p class="wedding-title">Choose Your Wedding Place</p>
+    </div>
+    <div class="search-div">
+        <div class="search-icon-div"><img src="/Static/icons/search.png" class="search-icon-image" alt=""></div>
+        <div>
+            <p>Seach Venues and Venders</p>
+        </div>
+        <div class="downarrow-icon-div"><img src="/Static/icons/arrow-down.png" onclick="opensearch()"
+                class="downarrow-icon-image" alt=""></div>
+    </div>
+
+    <div class="search-dropdown" id="search">
+        <div style="display: flex;">
+            <div class="search-drop-div">
+                <p class="search-div-title">Venues</p>
+
+                <div class="search-item-div"><a href="" class="search-link">Banquet Halls</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Lawns / Farmhouses</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Resorts</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Small Function / Party Halls</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Kalyana Mandapam</a></div>
+            </div>
+            <div class="search-drop-div bc-white">
+                <p class="search-div-title">Photographers</p>
+
+                <div class="search-item-div"><a href="" class="search-link">Banquet Halls</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Lawns / Farmhouses</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Resorts</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Small Function / Party Halls</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Kalyana Mandapam</a></div>
+            </div>
+            <div class="search-drop-div">
+                <p class="search-div-title">Mackup Artist</p>
+
+                <div class="search-item-div"><a href="" class="search-link">Banquet Halls</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Lawns / Farmhouses</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Resorts</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Small Function / Party Halls</a></div>
+                <div class="search-item-div"><a href="" class="search-link">Kalyana Mandapam</a></div>
+            </div>
+            <div style="margin:10px 20px 0px 0px">
+                <img src="/Static/icons/close.png" alt="" class="close-icon-image" onclick="closesearch()">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="card3-container">
+
+    <div class="card3-clone">
+        <div>
+            <p class="proxima-nova F-22">Wedding Categories</p>
+        </div>
+    </div>
+
+    <div class="card3-clone">
+
+    </div>
+
+    <div class="card3" style="background-color: #D8DFFC;">
+        <div class="card3-info">
+            <P class="proxima-nova f-20" style="margin: 30px 0px 10px 20px;">Venues</P>
+            <small class="proxima-nova" style="margin: 0px 0px 0px 20px;">Banquet
+                Hall,Resorts,Lawns/Farmhouses,Hotels</small>
+        </div>
+        <div class="card3-image">
+            <img src="https://th.bing.com/th/id/OIP.Sqnw7eVF6h9npp_WWpNKQgHaE7?pid=ImgDet&rs=1" alt=""
+                class="img100 border-radius-5">
+        </div>
+    </div>
+
+    <div class="card3" style="background-color: #F4D5C2;">
+        <div class="card3-info">
+            <P class="proxima-nova f-20" style="margin: 30px 0px 10px 20px;">Photographer</P>
+            <small class="proxima-nova" style="margin: 0px 0px 0px 20px;">Photographers, Cinema/Video</small>
+        </div>
+        <div class="card3-image">
+            <img src="https://th.bing.com/th/id/OIP.AuLRqhLa1h-sPLg0r_DzAgHaE8?pid=ImgDet&rs=1" alt=""
+                class="img100 border-radius-5">
+        </div>
+    </div>
+
+    <div class="card3" style="background-color: #DFB2AD;">
+        <div class="card3-info">
+            <P class="proxima-nova f-20" style="margin: 30px 0px 10px 20px;">Makeup</P>
+            <small class="proxima-nova" style="margin: 0px 0px 0px 20px;">Bridal Makeup, Family Makeup</small>
+        </div>
+        <div class="card3-image">
+            <img src="https://image.wedmegood.com/resized/250X/uploads/m_v_cat_image/3/makeup.jpg" alt=""
+                class="img100 border-radius-5">
+        </div>
+    </div>
+
+    <div class="card3" style="background-color:  #CFCDB8;">
+        <div class="card3-info">
+            <P class="proxima-nova f-20" style="margin: 30px 0px 10px 20px;">Mehndi</P>
+            <small class="proxima-nova" style="margin: 0px 0px 0px 20px;">Mehendi Artist</small>
+        </div>
+        <div class="card3-image">
+            <img src="https://image.wedmegood.com/resized/250X/uploads/m_v_cat_image/6/mehendi-artists.jpg" alt=""
+                class="img100 border-radius-5">
+        </div>
+    </div>
+
+    <div class="card3" style="background-color: #DCF7F7;">
+        <div class="card3-info">
+            <P class="proxima-nova f-20" style="margin: 30px 0px 10px 20px;">Bridal Wear</P>
+            <small class="proxima-nova" style="margin: 0px 0px 0px 20px;">Bridal Lehengas, Kanjeevaram / Silk
+                Saree</small>
+        </div>
+        <div class="card3-image">
+            <img src="https://image.wedmegood.com/resized/250X/uploads/m_v_cat_image/4/bridal-wear.jpg" alt=""
+                class="img100 border-radius-5">
+        </div>
+    </div>
+
+    <div class="card3" style="background-color:  #d0b8a9;">
+        <div class="card3-info">
+            <P class="proxima-nova f-20" style="margin: 30px 0px 10px 20px;">Groom Wear</P>
+            <small class="proxima-nova" style="margin: 0px 0px 0px 20px;">Sherwani, Wedding Suits / Tuxes, Sherw</small>
+        </div>
+        <div class="card3-image">
+            <img src="https://cdn0.weddingwire.in/article/3996/3_2/960/jpg/16993-indian-groom-wedding-dress-coolbluez-photography-lead.jpeg"
+                alt="" class="img100 border-radius-5">
+        </div>
+    </div>
+</div>
+
+{% include "Footer.html" %}

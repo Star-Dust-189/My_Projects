@@ -1,0 +1,374 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: proxima-nova, sans-serif;
+}
+.blur
+{
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.root-container
+{
+    margin-left: 100px;
+    margin-top: 100px;
+    justify-content: center;
+}
+.img100
+{
+    width: 100%;
+    height: 100%;
+}
+.HEADER
+{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    box-shadow: 0px 1px 5px 0px gray;
+    padding: 0px 25px;
+    align-items: center;
+    justify-content: space-around;
+}
+.BRAND
+{
+    padding: 0px 0px;
+}
+.brand-text
+{
+    text-decoration: none;
+    color: #000000;
+    font-family: 'Dancing Script', cursive;
+}
+.MENU
+{
+ margin: 0px Opx ;
+ padding: 0px 0px;
+}
+.MENU ul
+{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.MENU ul li
+{
+    margin: 0px 2px;
+    padding: 30px 0px;
+}
+.MENU ul li:hover
+{
+    box-shadow: 0px 1px 5px 0px white;
+}
+.MENU ul li a
+{
+    text-decoration: none;
+    color: black;
+    font-size: 17;
+    padding: 30px 10px;
+}
+
+.DROPDOWN
+{
+    display: none;
+    position: fixed;
+    background-color: #fff;
+    margin-top: 30px;
+    width: 600px;
+    box-shadow: 0px 1px 5px 0px gray;
+}
+.MENU ul li:hover .DROPDOWN{
+    display: block;
+    display: flex
+}
+
+.a-container 
+{
+    display: block;
+}
+
+.username
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 10px 0px 0px 10px;
+}
+/**/
+.icon_con
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.icon{
+    background-color: white;
+    margin: 0px 5px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.icon:hover
+{
+    background-color: #f2f2f2;
+    box-shadow: 0px 1px 5px 0px black;
+}
+.icon-img
+{
+    width:  25px;
+    height: 25px;
+}
+
+/**/
+.dropdown-header
+{
+    position: relative;
+    margin-top: 10px;
+    width: 45%;
+    height: 100px;
+    margin:  0px 420px ;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+
+/* HOME PAGE FIRST VIEW css */
+.Shop
+{
+    background-color: #fff;
+    color: black;
+    margin-top: 0px;
+    padding: 0px 100px;
+    font-family: inter,sans-serif;
+    height: 85%;
+    text-align: center;
+}
+#Shop-bt-position
+{
+    margin-top: 25px;
+}
+.Shop-Now
+{
+    text-decoration: none;
+    color: #fff;
+    background-color: #0AAD0A;
+    font-size: 14px;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+.Shop-Now:hover
+{
+    transition: 0.5s;
+    font-weight: bold;
+    background-color: #088708;
+    box-shadow: 0px 2px 10px 0px gray;
+}
+.SHOP-CATEGORIES
+{
+    margin: 50px 0px;
+    width: 100%;
+}
+.col-div
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0px 200px;
+}
+
+.cmn-div
+{
+    margin: 10px 20px;
+    width: 300px;
+    height: auto;
+}
+.title
+{
+    color: #fff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0px 200px;
+}
+.home-image
+{
+    height: 480px;
+    width: 500px;
+}
+.empty-cart-image
+{
+    height: 480px;
+    width: 650px;
+}
+.image
+{
+    width: 100%;
+    height: 500px;
+    border-radius: 50px;
+}
+.product-container
+{
+    display: flex;
+}
+.product-position
+{
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 50px;
+}
+
+/* OFFER CSS */
+
+.offer{
+    background: white;
+    margin-top: 80px;
+    padding: 30px 0;
+}
+.small-containers{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: white;
+}
+.offer-row 
+{
+    display: flex;
+}
+.offer-col img
+{
+    height: 300px;
+    width: 200px;
+}
+
+/* */
+.sidenav
+        {
+            height: 100%;
+            width: 0px;
+            position: fixed;
+            z-index: 1;
+            overflow-x: hidden;
+            transition: 0.5s;
+            top: 0;
+            right: 0;
+            background-color: rgb(248, 248, 248);
+            box-shadow: 0 -1px 5px 0 black;
+            margin-top: 80px;
+        }
+
+        .sidenav .closebtn
+        {
+            position: absolute;
+            top: 0;
+            margin-top: 10px;
+            margin-left: 25px;
+            font-size: 36px;
+            text-decoration: none;
+            color: black;
+            padding: 2.5px 5px;
+        }
+        .sidenav .closebtn:hover
+        {
+            background-color: rgb(241, 243, 243);
+        }
+
+        .search-box
+        {
+          width: 200px;
+          height: 40px;
+          padding: 10px 20px;
+          border: 1px solid gray;
+          border-radius: 5px 0px 0px 5px;
+        }
+        .search-box::-webkit-input-placeholder { /* Edge */
+          font-weight: bold;
+        }
+        .search-box:focus {
+          outline: none;
+          border: 0.5px solid gray;
+        }
+        .search-btn
+        {
+            font-size: 12px;
+            font-weight: normal;
+            color: #fff;
+            background-color: #059105;
+            border-radius: 0px 5px 5px 0px;
+        }
+
+.icon-css
+{
+    height: 15px;
+    width: 15px;
+    color: #000000;
+}
+.message-css
+{
+    margin-bottom: 0px;
+    position: static;
+}
+
+/* Forms css*/
+
+.form-div-size {
+    max-width: 400px;
+    padding: 50px 30px;
+}
+
+.form-border {
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px 0px gray;
+}
+
+.input-box {
+    width: 100%;
+    height: 40px;
+    padding: 0px 20px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.input-box::-webkit-input-placeholder {
+    /* Edge */
+    font-weight: bold;
+    color: #200016;
+}
+
+.input-box:focus {
+    outline: none;
+    border: 0px solid #fff;
+}
+
+.input-box:hover {
+    box-shadow: 0px 5px 10px 0px gray;
+}
+
+.top-margin {
+    margin-top: 12px;
+}
+
+.submit-btn {
+    width: 100%;
+    height: 40px;
+    color: white;
+    font-size: medium;
+    background-color: #ab0577;
+    padding: 8px 16px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.submit-btn:hover {
+    font-weight: bold;
+    background-color: #b10e7d;
+    box-shadow: 0px 5px 10px 0px gray;
+}
+
+.link-css {
+    color: #b10e7d;
+    text-decoration: none;
+}

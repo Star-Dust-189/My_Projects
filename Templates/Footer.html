@@ -1,0 +1,17 @@
+<script>
+    function validation() {
+    var first_name = document.getElementById('first_name');
+    var mobile = document.getElementsById('mobile');
+    var letters = /^[A-Za-z]+$/;
+    if (first_name.match(letters)&&isNaN(mobile)) {
+        return true;
+    }
+    else {
+        alert("PLEASE ENTER VALID INPUTS.");
+        return false;
+    }
+}
+</script>
+    
+</body>
+</html>

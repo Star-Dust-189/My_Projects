@@ -1,0 +1,55 @@
+{% include 'Header.html' %}
+
+<!--Message-->
+{% include "Message.html" %}
+
+<!--Sign in content section-->
+<div class="root-container"  id="BLUR">
+
+    <div class="form-div-size form-border">
+        <!--Text section-->
+        <div>
+            <h1>Login Yourself</h1>
+            <p style="margin-top: 4px;">Welcome back into Event Planner!</p>
+        </div>
+
+        <!--Form section-->
+        <form method="post" action="{% url 'login'%}">
+            {% csrf_token %}
+            <div>
+
+                <!--Input Section-->
+                <div class="top-margin">
+                    <input type="email" name="loginusername" class="input-box" id="inputEmail4"
+                        placeholder="Username" required="">
+                </div>
+
+                <!--Input Section-->
+                <div class="top-margin">
+                    <input type="password" name="loginpassword" class="input-box" id="inputPassword4"
+                        placeholder="Password" required="">
+                </div>
+
+                <!-- Sign in Button section-->
+                <div class="top-margin">
+                    <button type="submit" class="submit-btn">Sign In</button>
+                </div>
+
+                <div class="top-margin">
+                    <small>
+                        Don’t have an account? <a href="{% url 'registration' %}" class="link-css "> SignUp</a>
+                    </small> 
+                </div>
+
+                <div class="top-margin">
+                    <div style="float: right; margin-bottom: 10px;"> 
+                        <small>Forgot password?<a href="{% url 'forget' %}" class="link-css">  Reset It</a></small>
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+{% include 'Footer.html' %}
